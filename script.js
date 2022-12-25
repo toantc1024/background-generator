@@ -64,7 +64,7 @@ h3.addEventListener('click', function() {
 random.addEventListener('click', function() {
 	randomGradient(false);
 });
-
+//TT
 randomAll.addEventListener('click', () => {
 	randomGradient(true);
 });
