@@ -6,7 +6,6 @@ var input1 = document.querySelector('#color1'),
 	h3 =  document.querySelector('h3');
 input1.value = '#eb4034';
 input2.value = '#3734eb';
-
 function applyBackground(first, second, angle) {
 	if(angle === 0) {
 		angle = "to right";
@@ -66,7 +65,6 @@ random.addEventListener('click', function() {
 	randomGradient(false);
 });
 
-randomAll.addEventListener('click', function() {
+randomAll.addEventListener('click', () => {
 	randomGradient(true);
 });
-
