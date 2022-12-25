@@ -64,7 +64,11 @@ h3.addEventListener('click', function() {
 random.addEventListener('click', function() {
 	randomGradient(false);
 });
+<<<<<<< HEAD
 //TT
+=======
+// Marcy
+>>>>>>> 2919626c1ee25195dfa852613a946393190ebd16
 randomAll.addEventListener('click', () => {
 	randomGradient(true);
 });
