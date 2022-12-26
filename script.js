@@ -43,25 +43,25 @@ function randomGradient(allMode) {
 applyBackground(input1.value, input2.value, 0); 
 //Init value
 
-input1.addEventListener('input', function() {
+input1.addEventListener('input', () => {
 	applyBackground(input1.value, input2.value, 0);
 });
 
-input2.addEventListener('input', function() {
+input2.addEventListener('input', () => {
 	applyBackground(input1.value, input2.value, 0);
 });	
 
-deg.addEventListener('input', function() {
+deg.addEventListener('input', () => {
 	updateAngle();
 	applyBackground(input1.value, input2.value, this.value);
 });
 
-h3.addEventListener('click', function() { 
+h3.addEventListener('click', () => { 
 	navigator.clipboard.writeText(this.innerText.toLocaleLowerCase());
 	//Click h3 to copy to clipboard
 });
 
-random.addEventListener('click', function() {
+random.addEventListener('click', () => {
 	randomGradient(false);
 });
 randomAll.addEventListener('click', () => {
