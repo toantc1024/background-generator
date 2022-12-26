@@ -6,6 +6,10 @@ var input1 = document.querySelector('#color1'),
 	h3 =  document.querySelector('h3');
 input1.value = '#eb4034';
 input2.value = '#3734eb';
+
+function updateAngle() {
+	document.querySelector('.groupDeg').children[1].innerText = deg.value + " deg";
+}
 function applyBackground(first, second, angle) {
 	if(angle === 0) {
 		angle = "to right";
@@ -14,10 +18,6 @@ function applyBackground(first, second, angle) {
 	}
 	document.body.style.background = 'linear-gradient(' + angle  + ', ' + first + ',' + second + ')';
 	h3.innerText = 'background: '+document.body.style.background+";";
-}
-
-function updateAngle() {
-	document.querySelector('.groupDeg').children[1].innerText = deg.value + " deg";
 }
 
 function getRandomColor() {
@@ -64,11 +64,6 @@ h3.addEventListener('click', function() {
 random.addEventListener('click', function() {
 	randomGradient(false);
 });
-<<<<<<< HEAD
-//TT
-=======
-// Marcy
->>>>>>> 2919626c1ee25195dfa852613a946393190ebd16
 randomAll.addEventListener('click', () => {
 	randomGradient(true);
 });
